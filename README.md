@@ -257,7 +257,7 @@ Selected network interface: eth0
 ERROR: Invalid MAC address format in backup file '/home/user/.config/macaddr_backup/eth0_2025-03-23'
 ```
 - **Cause**: The backup file contains an invalid MAC address (e.g., manually edited to `invalid`).
-- **Fix**: Remove the backup file (with `sudo rm ~/.config/macaddr_backup/eth0_2025-03-23`) and recreate the backup file by running the script again.
+- **Fix**: Remove the backup file (with `sudo rm ~/.config/macaddr_backup/*`) and recreate the backup file by running the script again.
 
 #### MAC Address List Empty
 (Rare, but theoretically possible)
