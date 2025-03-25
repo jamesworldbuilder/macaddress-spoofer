@@ -38,7 +38,7 @@ This script performs the following key functions:
 
         It's recommended that if you spoofed a specific interface, to specify the same one when using the `--revert` flag, because if the auto-detected interface doesn’t match the one you previously spoofed, it fails with a "`No backup file found`" error. This is a limitation of the auto-detection logic, not a bug— the script assumes consistency between spoofing and reverting. 
 
-        Issues arise if suppose the script previously spoofed the MAC address for the `wlan0` interface and saved the backup file as `wlan0_2025-03-23`, but `eth0` is the first interface detected when running `./mac_address_spoofer.sh --revert` without specifying the `--interface` flag. Then the script will look for a backup filename beginning with "`eth0_`" instead or "`wlan0_`".
+        Issues arise if suppose the script previously spoofed the MAC address for the `wlan0` interface and saved the backup file as `wlan0_2025-03-23`, but `eth0` is the first interface detected when running `./mac_address_spoofer.sh --revert` without specifying the `--interface` flag. Then the script will look for a backup filename beginning with "`eth0_`" instead of "`wlan0_`".
      - Example: 
 
        (recommended)
