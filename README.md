@@ -15,7 +15,6 @@ This script performs the following key functions:
 - **Bash Shell**: Compatible with Bash 4.0 or later.
 - **Dependencies**:
   - `ip` (from `iproute2` package, usually pre-installed).
-  - `shuf` (from `coreutils`, usually pre-installed).
   - Optional: `nmcli` (from `NetworkManager`, recommended for cleaner network disconnection if available).
 - **Permissions**: Requires `sudo` privileges to modify network interface settings.
 
