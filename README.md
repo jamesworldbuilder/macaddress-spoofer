@@ -19,7 +19,7 @@ This script performs the following key functions:
 - **Permissions**: Requires `sudo` privileges to modify network interface settings.
 
 ## How to Use
-1. **Make it Executable**: First, make sure it's executable with:
+1. **Make it Executable**: 
    ```bash
    chmod +x mac_address_spoofer.sh
    ```
