@@ -6,7 +6,7 @@ The `MAC Address Spoofer Script` (`mac_address_spoofer.sh`) is a Bash utility de
 ## What It Does
 This script performs the following key functions:
 - **Spoofs a MAC Address**: Generates a random MAC address and applies it to a specified or auto-detected network interface (e.g., `eth0`, `wlan0`, `enp1s0`, etc.).
-- **Backs Up the Original MAC**: Stores the original MAC address in `~/.config/macaddr_backup/` with a creation date suffix (e.g., `eth0_2025-03-23`), but only if no backup exists yet for the selected network interface. Backup file permissions are isolated to the current user. 
+- **Backs Up the Original MAC Address**: Stores the original MAC address in `~/.config/macaddr_backup/` with a creation date suffix (e.g., `eth0_2025-03-23`), but only if no backup exists yet for the selected network interface. Backup file permissions are isolated to the current user. 
 - **Option to Restore Original MAC Address**: Restores the original MAC address of the selected network interface from the backup file when the script is run with the `--revert` flag.
 - **Purpose-Specific Network Handling and MAC Format Validation**: Disconnects the network before changing the MAC address, retries if necessary, checks network connectivity using [Quad9’s public DNS server](https://www.quad9.net/) (`9.9.9.9`), and validates the new MAC address format.
 
